@@ -1,0 +1,58 @@
+body {
+  background-image: url(img/background-raw.png);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-size: cover;
+}
+#nav_bar {
+  background-color: lightcoral;
+  color: black;
+  box-shadow: 0px 5px 4px rgb(42, 41, 41);
+  z-index: 10;
+}
+
+#logo {
+  width: 75px;
+}
+#slide_2 {
+  color: black;
+}
+#featured_products {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+
+#services_offered {
+  background-color: lightcoral;
+  color: whitesmoke;
+}
+.card-img-top {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+@media only screen and (max-width: 992px) {
+  .card-img-top {
+    height: 50vh;
+    min-height: 200px;
+  }
+}
+#order_slip {
+  width: 100%;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  background-color: bisque;
+}
+.card {
+  box-shadow: 0 5px 3px rgb(0, 0, 0.622);
+}
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+#footer a:hover {
+  color: steelblue;
+}
