@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+    <link rel="icon" href="img/logo2.png" />
+  </head>
+  <body>
+    <!--navigation Bar-->
+    <nav class="navbar navbar-expand-lg" id="nav_bar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="img/logo.png.png" id="logo"
+        /></a>
+        <!--burger menu-->
+        <button class="navbar-toggler" data-bs-target="#site_navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--burger menu-->
+        <div class="collapse navbar-collapse" id="site_navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html"> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html"> Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html"> Contact Us</a>
+            </li>
+            <li class="nav-tem">
+              <a class="nav-link disabled" href="careers.html"> Careers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+              >
+                Charities</a
+              >
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#"> Africa </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> America </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"> India </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#"> Philippines</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sierra Lione</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="ex. Coffee"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <span class="materials-symbols-outlined align-middle"
+                  >search
+                </span>
+              </button>
+            </form>
+          </div>
+          <div class="nav-item">
+            <a class="nav-link" href="login.html">Log in / Sign up</a>
+          </div>
+          <div class="nav-item">
+            <button
+              class="btn btn-outline-warning"
+              data-bs-toggle="modal"
+              data-bs-target="#cart"
+            >
+              <img src="img/cart.png" alt="cart logo" width="50px" />
+            </button>
+            <div class="modal fade" id="cart" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modal-title">
+                      <strong>Food Cart</strong>
+                    </p>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <table id="order_slip">
+                          <tr>
+                            <th>Name</th>
+                            <th>Discription</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Amount</th>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="img/affogatto.jpg"
+                                alt="affogato"
+                                width="100px"
+                              />
+                              <br />Affogato
+                            </td>
+                            <td>Large</td>
+                            <td>1</td>
+                            <td>PHP 100.00</td>
+                            <td>PHP 100.00</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="img/mango_cheesecake.jpeg"
+                                alt="mangp cheesecake slice"
+                                width="100px"
+                              />
+                              <br />Mango Cheesecake
+                            </td>
+                            <td>per slice</td>
+                            <td>2</td>
+                            <td>PHP 95.00</td>
+                            <td>PHP 190.00</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <img
+                                src="img/smores_cupcake.webp"
+                                alt="smores cupcake"
+                                width="100px"
+                              />
+                              <br />Smores Mountain
+                            </td>
+                            <td>per peice</td>
+                            <td>1</td>
+                            <td>PHP 45.00</td>
+                            <td>PHP 45.00</td>
+                          </tr>
+                          <tr>
+                            <th colspan="4" class="text-end">Total Amount:</th>
+                            <th>PHP 335.00</th>
+                          </tr>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-outline-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Return to Shop
+                    </button>
+                    <button class="btn btn-outline-success">Check Out</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--Cake cards-->
+    <div class="container mb-6">
+      <h1>CAKES</h1>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/fruit_cake.png"
+              class="card-img-top"
+              alt="fruit cake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Fruit Cake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 450.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#fruit_cake"
+              >
+                Add to cart
+              </button>
+            </div>
+            <div class="modal fade" id="fruit_cake" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modal-title">
+                      <strong>fruit Cake</strong>
+                    </p>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <img
+                          src="img/fruit_cake.png"
+                          alt="fruit cake"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-lg-6">
+                        <h1>Fruit Cake</h1>
+                        <p>
+                          <strong>PHP 450.00</strong> <br />Chocolate cake with
+                          ganache filling and drippings, white chocolate coating
+                          and fruit toppings.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-outline-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button class="btn btn-outline-success">Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/tripple_choco.jpg"
+              class="card-img-top"
+              alt="tripple chocolate cake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Triple Choco</strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 500.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#tripple_choco"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="tripple_choco" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>fruit Cake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/tripple_choco.jpg"
+                            alt="tripple chocolate cake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Tripple Chocolate cake</h1>
+                          <p>
+                            <strong>PHP 500.00</strong><br />tripple chocolate
+                            cake with chocolate coated nuts, ganache filling.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/rainbow_cake.jpg"
+              class="card-img-top"
+              alt="Rainbow cake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Rainbow Cake</strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 400.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#rainbow_cake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="rainbow_cake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Rainbow Cake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/rainbow_cake.jpg"
+                            alt="rainbow cake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Rainbow Cake</h1>
+                          <p>
+                            <strong>PHP 400.00</strong><br />Vanilla flavored
+                            cake with rainbow color buttercream.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/ube.JPG"
+              class="card-img-top"
+              alt="ube flavored cake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Ube Tastic</strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 450.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#ube_cake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="ube_cake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Ube Tastic Cake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/ube.JPG"
+                            alt="Ube Cake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Rainbow Cake</h1>
+                          <p>
+                            <strong>PHP 450.00</strong><br />Ube flavored cake
+                            with ube filling, ube buttercream and vanilla
+                            buttercream.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/mocha_cake.jpg"
+              class="card-img-top"
+              alt="MOCHA cake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Ultimate Mocha </strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 550.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#ultimate_mocha"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="ultimate_mocha" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Ultimate Mocha Cake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/mocha_cake.jpg"
+                            alt="Mocha Flavored Cake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Ultimate Mocha Cake</h1>
+                          <p>
+                            <strong>PHP 550.00</strong><br />Mocha flavored cake
+                            with mocha buttercream and chocolate ganache
+                            filling.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/coffee_cake.webp"
+              class="card-img-top"
+              alt="coffee flavored cake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Coffee Express </strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 500.00</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#coffee_cake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="coffee_cake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Coffee Express Cake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/coffee_cake.webp"
+                            alt="Coffee Flavored Cake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Coffee Express Cake</h1>
+                          <p>
+                            <strong>PHP 500.00</strong><br />Espresso flavored
+                            cake with chcolate ganache filling.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--cheesecake Cards-->
+    <div class="container mt-6">
+      <h1>CHEESECAKES</h1>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/cherry_cheesecake.webp"
+              class="card-img-top"
+              alt="cherry cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Cherry <br />Cheesecake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 95.00 per slice<br />PHP 450.00 whole</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#cherry"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="cherry" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Cherrry Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/cherry_cheesecake.webp"
+                            alt="Cherry Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cherry Cheesecake</h1>
+                          <p>
+                            <strong
+                              >PHP 95.00 per slice<br />PHP 450.00 whole</strong
+                            ><br />Crashed graham crackers for the crust,
+                            <br />plain cheesecake and candied cherries for
+                            toppings.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Slice (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 450.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/blueberry_cheesecake.jpg"
+              class="card-img-top"
+              alt="blueberry cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header"><strong>Blueberry Cheesecake</strong></div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 95.00 per slice<br />PHP 450.00 whole</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#blueberry"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="blueberry" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Blueberry Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/blueberry_cheesecake.jpg"
+                            alt="Blueberry Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cherry Cheesecake</h1>
+                          <p>
+                            <strong
+                              >PHP 95.00 per slice<br />PHP 450.00 whole</strong
+                            ><br />Crashed graham crackers for the crust,
+                            <br />plain cheesecake and bluebberries on top.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Slice (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 450.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/strawberry_cheesecake.jpeg"
+              class="card-img-top"
+              alt="strawberry cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Strawberry Cheesecake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 95.00 per slice<br />PHP 450.00 whole</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#strawberry"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="strawberry" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Strawberry Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/strawberry_cheesecake.jpeg"
+                            alt="Strawberry Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Strawberry Cheesecake</h1>
+                          <p>
+                            <strong
+                              >PHP 95.00 per slice<br />PHP 450.00 whole</strong
+                            ><br />Crashed graham crackers for the crust,
+                            <br />plain flavored cheesecake with strawberry
+                            puree on top.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Slice (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 450.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/mango_cheesecake.jpeg"
+              class="card-img-top"
+              alt="mango cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Mango <br />Cheesecake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 95.00 per slice<br />PHP 450.00 whole</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#mango"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="mango" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Mango Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/mango_cheesecake.jpeg"
+                            alt="Mango Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Mango Cheesecake</h1>
+                          <p>
+                            <strong
+                              >PHP 95.00 per slice<br />PHP 450.00 whole</strong
+                            ><br />Crashed graham crackers for the crust,
+                            <br />plain cheesecake with diced mango and puree on
+                            top.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Slice (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 450.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/cookies_and_cream.jpg"
+              class="card-img-top"
+              alt="cookies and cream cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong> Cookies and Cream Cheesecake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong
+                  >PHP 95.00 per slice<br />
+                  PHP 450.00 whole</strong
+                ><br />
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#cookies"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="cookies" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Cookies and Cream Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/cookies_and_cream.jpg"
+                            alt="Cookies and Cream Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cookies and Cream Cheesecake</h1>
+                          <p>
+                            <strong
+                              >PHP 95.00 per slice<br />PHP 450.00 whole</strong
+                            ><br />Cookies and cream flavored cheesecake with
+                            whipped cream on top.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Slice (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 450.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/assorted.jpg"
+              class="card-img-top"
+              alt="Assorted flavor cheesecake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong> Assorted <br />Cheesecake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong
+                  >PHP 600.00 Whole<br />
+                  PHP 350.00 Half</strong
+                >
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#assorted"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="assorted" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Assorted Cheesecake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/assorted.jpg"
+                            alt="Assorted Flavor Cheesecake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <p>
+                            <strong
+                              >12pcs Assorted Cheesecake <br />PHP 600.00
+                              whole<br />
+                              PHP 350.00 half</strong
+                            >
+                            <br />
+                          </p>
+                          <ul>
+                            <li>Strawberry Cheesecake</li>
+                            <li>Blueberry Cheesecake</li>
+                            <li>Mango Cheesecake</li>
+                            <li>Cookies and Cream Cheesecake</li>
+                            <li>Chocolate Cheesecake</li>
+                            <li>Reeses Cheesecake</li>
+                            <li>Burnt Cheesecake</li>
+                            <li>Plain cheesecake</li>
+                          </ul>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Half (php 350.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Whole (php 600.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Cupcakes Cards-->
+    <div class="container mb-6">
+      <h1>CUPCAKES</h1>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/choco_cupcake.jpg"
+              class="card-img-top"
+              alt="Choco cupcake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Chocolate <br />Cupcake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#choco_cupcake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="choco_cupcake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Chocolate Cupcake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/choco_cupcake.jpg"
+                            alt="Chocolate Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Chocolate Cupcake</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />Moist chocolate cupcake with whipped chocolate
+                            ganache and chocolate, sprinkles.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/Red.jpg"
+              class="card-img-top"
+              alt="Red Velvet cupcake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Red Velvet <br />Cupcake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#red_velvet_cupcake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="red_velvet_cupcake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Red Velvet Cupcake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/Red.jpg"
+                            alt="Red Velvet Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Red Velvet Cupcake</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />red velvet cupcake with cream cheese frosting.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/strawberry_choco.jpg"
+              class="card-img-top"
+              alt="Chocolate cupcake with strawberry icing"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Strawberry Choco <br />Cupcake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#strawberry_choco"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="strawberry_choco" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Strawberry Choco Cupcake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/strawberry_choco.jpg"
+                            alt="Strawberry Choco Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Strawberry Choco Cupcake</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />Moist chocolate cupcake with strawberry icing
+                            and fresh raspberry fruit.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/mint_choco_cupcake.webp"
+              class="card-img-top"
+              alt="Mint choco Cupcake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong
+                >Midnight <br />
+                Mint</strong
+              >
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#mint"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="mint" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>MMidnight Mint</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/mint_choco_cupcake.webp"
+                            alt="Mint Choco Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Midnight Mint</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />Moist chocolate cupcake with Mint flavored
+                            icing.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/smores_cupcake.webp"
+              class="card-img-top"
+              alt="Smores Cupcake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Smores <br />Mountain</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#smores"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="smores" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Smores Mountain</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/smores_cupcake.webp"
+                            alt="smores Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Smores Mountain</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />Moist chocolate cupcake with graham crust and
+                            burnt marshmallow puff icing.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/coffee_cupcake.jpg"
+              class="card-img-top"
+              alt="Coffee cupcake"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Coffee Express <br />Cupcake</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>PHP 45.00 per peice<br />PHP 500.00 1 dozen</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#coffee_cupcake"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="coffee_cupcake" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Coffee Express Cupcake</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/coffee_cupcake.jpg"
+                            alt="Coffee Cupcake"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Coffee Cupcake Cupcake</h1>
+                          <p>
+                            <strong
+                              >PHP 45.00 per peice<br />PHP 500.00 1
+                              dozen</strong
+                            >
+                            <br />
+                            Chocolate cupcake with coffee buttercream.
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Per Peice (php 45.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >1 Dozen (php 500.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Coffees cards-->
+    <div class="container">
+      <h1>COFFEES</h1>
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/cafe_latte.jpg"
+              class="card-img-top"
+              alt="Espresso with steamed milk and foam"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Cafe Latte</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Hot or Iced</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#cafe_latte"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="cafe_latte" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Cafe Latte</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/cafe_latte.jpg"
+                            alt="Espresso with steamed milk and foam"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cafe Latte</h1>
+                          <p>
+                            <strong
+                              >Espresso with steamed milk and foam<br />
+                              Hot</strong
+                            >
+                            <br />PHP 65.00 Regular<br />PHP 95.00 Large <br />
+                            <strong>Cold</strong> <br />PHP 70.00 Regular<br />
+                            PHP 100.00 Large
+                          </p>
+                          <div class="form-check">
+                            <p><strong>Hot</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <p><strong>Cold</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 70.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 100.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/affogatto.jpg"
+              class="card-img-top"
+              alt="Vanilla ice cream with espresso shot"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Affogatto</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Regular or Large</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#affogatto"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="affogatto" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Affogatto</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/affogatto.jpg"
+                            alt="Affogatto"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Affogatto</h1>
+                          <p>
+                            <strong>Vanilla ice cream with espresso</strong>
+                            <br />PHP 70.00 Regular<br />PHP 100.00 Large
+                          </p>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 70.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 100.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/americano.jpg"
+              class="card-img-top"
+              alt="Espresso with hot water"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Americano</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Hot or Iced</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#americano"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="americano" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Americano</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/americano.jpg"
+                            alt="Espresso with steamed milk and foam"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Americano</h1>
+                          <p>
+                            <strong
+                              >Espresso with hot water<br />
+                              Hot</strong
+                            >
+                            <br />PHP 55.00 Regular<br />PHP 65.00 Large <br />
+                            <strong>Cold</strong> <br />PHP 65.00 Regular<br />
+                            PHP 75.00 Large
+                          </p>
+                          <div class="form-check">
+                            <p><strong>Hot</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 55.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <p><strong>Cold</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 75.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/cappuccino.jpg"
+              class="card-img-top"
+              alt="Cappuccino Coffee"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Cappuccino</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Hot or Iced</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#cappuccino"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="cappuccino" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Cappuccino</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/cappuccino.jpg"
+                            alt="appuccino Coffee"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cappuccino</h1>
+                          <p>
+                            <strong
+                              >Even combination of espresso, milk and foam.<br />
+                              Hot</strong
+                            >
+                            <br />PHP 65.00 Regular<br />PHP 95.00 Large <br />
+                            <strong>Cold</strong> <br />PHP 70.00 Regular<br />
+                            PHP 100.00 Large
+                          </p>
+                          <div class="form-check">
+                            <p><strong>Hot</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <p><strong>Cold</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 70.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 100.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/mocha.jpg"
+              class="card-img-top"
+              alt="Mocha Coffee"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Mocha Coffee</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Hot or Iced</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#mocha"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="mocha" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Mocha Coffee</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/mocha.jpg"
+                            alt="Mocha Coffee"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Mocha Coffee</h1>
+                          <p>
+                            <strong
+                              >Sweet combination of milk, chocolate espresso and
+                              whipped cream. <br />
+                              Hot</strong
+                            >
+                            <br />PHP 65.00 Regular<br />PHP 95.00 Large <br />
+                            <strong>Cold</strong> <br />PHP 70.00 Regular<br />
+                            PHP 100.00 Large
+                          </p>
+                          <div class="form-check">
+                            <p><strong>Hot</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <p><strong>Cold</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 70.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 100.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <div class="card">
+            <img
+              src="img/macchiato.jpg"
+              class="card-img-top"
+              alt="Caramel macchiato Coffee"
+              class="img-fluid"
+            />
+            <div class="card-header">
+              <strong>Caramel Macchiato</strong>
+            </div>
+            <div class="card-body">
+              <p>
+                <strong>Hot or Iced</strong>
+              </p>
+              <button
+                class="btn btn-outline-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#macchiato"
+              >
+                Add to cart
+              </button>
+              <div class="modal fade" id="macchiato" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="modal-title">
+                        <strong>Caramel Macchiato</strong>
+                      </p>
+                      <button
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <img
+                            src="img/macchiato.jpg"
+                            alt="Caramel Macchiato Coffee"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <div class="col-lg-6">
+                          <h1>Cappuccino</h1>
+                          <p>
+                            <strong
+                              >Espresso with milk foam and caramel.<br />
+                              Hot</strong
+                            >
+                            <br />PHP 65.00 Regular<br />PHP 95.00 Large <br />
+                            <strong>Cold</strong> <br />PHP 70.00 Regular<br />
+                            PHP 100.00 Large
+                          </p>
+                          <div class="form-check">
+                            <p><strong>Hot</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 65.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 95.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <p><strong>Cold</strong></p>
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Regular (php 70.00)
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input
+                              type="radio"
+                              class="form-check-input"
+                              value="a1"
+                              name="q2"
+                              id="a1"
+                            /><label
+                              class="form-check-label"
+                              for="a1"
+                              class="text-end"
+                              >Large (php 100.00)
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="modal-footer">
+                      <button
+                        class="btn btn-outline-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button class="btn btn-outline-success">
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <!--footer-->
+    <div class="footer" id="footer">
+      <div class="row text-center">
+        <div class="col-lg-6 mt-6">
+          <p>
+            <strong>huckleberrycafe</strong>
+          </p>
+        </div>
+        <div class="col-lg-2 mt-6">
+          <p><strong>Company</strong></p>
+        </div>
+        <div class="col-lg-2 mt-6">
+          <p><strong>Oline Shop</strong></p>
+        </div>
+        <div class="col-lg-2 mt-6">
+          <p><strong>Get Help</strong></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-6"><p>www.huckleberry.com</p></div>
+        <div class="col-lg-2">
+          <p><a href="about.html">About Us</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="shop.html">Cakes</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="contact_us.html">FAQ</a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-6"><p>Tel. No.(+63)935-888-444</p></div>
+        <div class="col-lg-2">
+          <p><a href="#">Our Services</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Cupcakes</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Refunds</a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-6">
+          <p><strong>Follow Us!</strong></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Privacy Policy</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Cheesecakes</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Order Status</a></p>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-lg-6">
+          <p>
+            <a href="#"
+              ><img src="img/frb.png" alt="facebook logo" width="50px"
+            /></a>
+            <a href="#">
+              <img src="img/twitter.png" alt="twitter logo" width="50px"
+            /></a>
+            <a href="#">
+              <img src="img/insta.png" alt="instagram logo" width="50px"
+            /></a>
+
+            <a href="#">
+              <img src="img/pin.png" alt="pinterest logo" width="50px"
+            /></a>
+            <a href="#"
+              ><img src="img/youtubelogo.png" alt="youtubelogo" width="50px"
+            /></a>
+          </p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Affiliate Program</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Coffee</a></p>
+        </div>
+        <div class="col-lg-2">
+          <p><a href="#">Payment Options</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
